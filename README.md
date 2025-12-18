@@ -1,4 +1,4 @@
-# webtech-final
+# athlitismós
 A website for holding discussions on sports
 
 Welcome to athlitismós, a website for holding discourse on sports with publishers, subscribers who can comment and an admin profile to manage all users
