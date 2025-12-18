@@ -1,0 +1,143 @@
+/* Global Styles */
+body {
+    background-color: #f0f0f0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    color: #333;
+    margin: 0;
+}
+
+/* Background Image Class for specific pages */
+body.bg-grad {
+    background-image: url('images/grad.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+main {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    /* Ensure readability over background */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+    color: #222;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #111;
+    text-decoration: none;
+}
+
+/* Buttons */
+.button {
+    font-size: 16px;
+    /* Consistent size */
+    background-color: #e0e0e0;
+    color: black;
+    border: 1px solid #999;
+    padding: 10px 20px;
+    /* Consistent padding */
+    cursor: pointer;
+    border-radius: 25px;
+    /* Consistent styling */
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: #d0d0d0;
+    text-decoration: none;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Comments Layout */
+.comment-box {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.comment-meta {
+    font-size: 0.8em;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.comment-content {
+    font-size: 1em;
+    color: #333;
+}
+
+/* Index Page Specifics */
+.index-buttons a {
+    text-decoration: none !important;
+}
+
+.index-buttons a:hover {
+    text-decoration: none !important;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}
