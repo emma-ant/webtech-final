@@ -49,15 +49,7 @@ $result = $conn->query($sql);
             </tr>
             <?php while($row = $result->fetch_assoc()): ?>
             <tr>
-                <!-- Linked to view_post.php (which should show comments? view_post.php does NOT show comments for publisher usually, only view_postsub.php. 
-                     However, the prompt says "is the title of the post hyperlinked to the view_post.php for it". 
-                     Wait, view_post.php I wrote redirects to view_postsub.php IF SUBSCRIBED.
-                     As a PUBLISHER, I should probably see the comments. 
-                     Let's check view_post.php logic. Currently it only redirects if subscribed AND role is subscriber.
-                     If role is publisher, it stays on view_post.php which DOES NOT show comments.
-                     
-                     Correction: I should update view_post.php to show comments if the user is the PUBLISHER of the post.
-                     I'll do that in a subsequent step.
+                <!-- 
                 -->
                 <td><a href="view_post.php?id=<?php echo $row['postID']; ?>"><?php echo htmlspecialchars($row['title']); ?></a></td>
                 <td><?php echo $row['createdAt']; ?></td>
@@ -69,3 +61,4 @@ $result = $conn->query($sql);
     </main>
 </body>
 </html>
+
